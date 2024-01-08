@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset>CSR_Referral</dataset>
+    <dates>
+        <alias>Start Date</alias>
+        <firstDayOfWeek>-1</firstDayOfWeek>
+        <fiscalMonthOffset>0</fiscalMonthOffset>
+        <label>Start Date</label>
+        <sortIndex>0</sortIndex>
+        <type xsi:nil="true"/>
+    </dates>
+    <dates>
+        <alias>End Date</alias>
+        <firstDayOfWeek>-1</firstDayOfWeek>
+        <fiscalMonthOffset>0</fiscalMonthOffset>
+        <label>End Date</label>
+        <sortIndex>1</sortIndex>
+        <type xsi:nil="true"/>
+    </dates>
+    <dimensions>
+        <field>CareSpeciality.Name</field>
+        <isDerived>false</isDerived>
+        <label>Speciality</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Facility.Name</field>
+        <isDerived>false</isDerived>
+        <label>Facility</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Referral_Age_Bucket</field>
+        <isDerived>false</isDerived>
+        <label>Referral Age</label>
+        <members>
+            <label>0-10</label>
+            <member>1. 0-10</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>10-20</label>
+            <member>2. 10-20</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>20-30</label>
+            <member>3. 20-30</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>30-40</label>
+            <member>4. 30-40</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <members>
+            <label>40-50</label>
+            <member>5. 40-50</member>
+            <sortIndex>4</sortIndex>
+        </members>
+        <members>
+            <label>50+</label>
+            <member>6. 50+</member>
+            <sortIndex>5</sortIndex>
+        </members>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>IsAccepted</field>
+        <isDerived>false</isDerived>
+        <label>IsAccepted</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>PatientId</field>
+        <isDerived>false</isDerived>
+        <label>PatientId</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Owner.Name</field>
+        <isDerived>false</isDerived>
+        <label>Owner Name</label>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Status</field>
+        <isDerived>false</isDerived>
+        <label>Status</label>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Priority</field>
+        <isDerived>false</isDerived>
+        <label>Priority</label>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Category.Name</field>
+        <isDerived>false</isDerived>
+        <label>Category</label>
+        <sortIndex>8</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>RequestCode.Name</field>
+        <isDerived>false</isDerived>
+        <label>Request Code</label>
+        <sortIndex>9</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Reason.Name</field>
+        <isDerived>false</isDerived>
+        <label>Reason Code</label>
+        <sortIndex>10</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Group.Name</field>
+        <isDerived>false</isDerived>
+        <label>Group name</label>
+        <sortIndex>11</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Group.DeveloperName</field>
+        <isDerived>false</isDerived>
+        <label>Group Developer Name</label>
+        <sortIndex>12</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Patient.Name</field>
+        <isDerived>false</isDerived>
+        <label>Patient Name</label>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>PatientId</recordIdField>
+        <salesforceActionsEnabled>true</salesforceActionsEnabled>
+        <sortIndex>13</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Days_left_for_enddate_bucket</field>
+        <isDerived>false</isDerived>
+        <label>Days Remaining</label>
+        <members>
+            <label>0-10</label>
+            <member>1. 0-10</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>10-20</label>
+            <member>2. 10-20</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>20-30</label>
+            <member>3. 20-30</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>30-40</label>
+            <member>4. 30-40</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <members>
+            <label>40-50</label>
+            <member>5. 40-50</member>
+            <sortIndex>4</sortIndex>
+        </members>
+        <members>
+            <label>50+</label>
+            <member>6. 50+</member>
+            <sortIndex>5</sortIndex>
+        </members>
+        <sortIndex>14</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Id</field>
+        <isDerived>false</isDerived>
+        <label>Id</label>
+        <sortIndex>15</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Name</field>
+        <isDerived>false</isDerived>
+        <linkTemplateEnabled>true</linkTemplateEnabled>
+        <recordIdField>Id</recordIdField>
+        <salesforceActionsEnabled>true</salesforceActionsEnabled>
+        <sortIndex>16</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Priority_Bucket</field>
+        <isDerived>false</isDerived>
+        <members>
+            <label>Routine</label>
+            <member>1.Routine</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>Urgent</label>
+            <member>2.Urgent</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>Stat</label>
+            <member>4.Stat</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>Unknowm</label>
+            <member>5.Unknowm</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <sortIndex>17</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Status_Bucket</field>
+        <isDerived>false</isDerived>
+        <members>
+            <label>Draft</label>
+            <member>1.Draft</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>Active</label>
+            <member>2.Active</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>On-Hold</label>
+            <member>3.On-Hold</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>Revoked</label>
+            <member>4.Revoked</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <members>
+            <label>Completed</label>
+            <member>5.Completed</member>
+            <sortIndex>4</sortIndex>
+        </members>
+        <members>
+            <label>Entered-in-Error</label>
+            <member>6.Entered-in-Error</member>
+            <sortIndex>5</sortIndex>
+        </members>
+        <members>
+            <label>Unknown</label>
+            <member>7.Unknown</member>
+            <sortIndex>6</sortIndex>
+        </members>
+        <sortIndex>18</sortIndex>
+    </dimensions>
+    <measures>
+        <field>Referral_Age_Days</field>
+        <isDerived>false</isDerived>
+        <label>Referral Age</label>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>Projected Backlog</field>
+        <formatCustomFormat>[&quot;#,###.#%;#,###.#%&quot;,100]</formatCustomFormat>
+        <formatDecimalSeparator>.</formatDecimalSeparator>
+        <formatThousandsSeparator>,</formatThousandsSeparator>
+        <isDerived>true</isDerived>
+        <showInExplorer>true</showInExplorer>
+        <sortIndex>0</sortIndex>
+    </measures>
+</WaveXmd>
